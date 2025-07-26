@@ -77,7 +77,7 @@ with st.sidebar:
     api_key = st.text_input("请输入你的 API Key", type="password")
 
     st.header("⚙️ 模型配置")
-    selected_model = st.selectbox("选择模型", ["code-claude-sonnet-4-20250514", "DeepSeek-R1-0528", "moonshotai/kimi-k2-instruct"])
+    selected_model = st.selectbox("选择模型", ["pplx-claude-sonnet-4-20250514", "gemini-2.5-pro", "gpt-4.1"])
     temperature = st.slider("温度 (Temperature)", min_value=0.0, max_value=1.0, value=0.7, step=0.1)
 
 # --- 主界面 ---
